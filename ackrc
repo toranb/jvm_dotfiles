@@ -1,0 +1,8 @@
+--literal
+--smart-case
+--type-set=coffeescript=.coffee
+--type-set=handlebars=.handlebars
+--type=coffeescript
+--type=python
+--type=ruby
+--type=handlebars
