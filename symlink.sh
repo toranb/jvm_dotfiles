@@ -22,6 +22,7 @@ sudo rm -rf ~/.zsh_prompt > /dev/null 2>&1
 sudo rm -rf ~/.zsh-syntax-highlighting.zsh > /dev/null 2>&1
 sudo rm -rf ~/highlighters > /dev/null 2>&1
 sudo rm -rf ~/.ackrc > /dev/null 2>&1
+sudo rm -rf ~/.rvmrc > /dev/null 2>&1
 sudo rm -rf ~/README > /dev/null 2>&1
 sudo rm -rf ~/.antigen > /dev/null 2>&1
 sudo rm -rf ~/.antigen.zsh > /dev/null 2>&1
@@ -44,6 +45,7 @@ fi
 ln -s ~/jvm_dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -s ~/jvm_dotfiles/zsh/zshrc ~/.zshrc
 ln -s ~/jvm_dotfiles/ackrc ~/.ackrc
+ln -s ~/jvm_dotfiles/rvmrc ~/.rvmrc
 ln -s ~/jvm_dotfiles/gitconfig ~/.gitconfig
 ln -s ~/jvm_dotfiles/gemrc ~/.gemrc
 ln -s ~/jvm_dotfiles/psqlrc ~/.psqlrc
