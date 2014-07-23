@@ -1,8 +1,8 @@
 --literal
 --smart-case
---type-set=coffeescript=.coffee
+--type-set=groovy=.groovy
 --type-set=handlebars=.handlebars
---type=coffeescript
+--type=groovy
 --type=python
 --type=ruby
 --type=handlebars
