@@ -33,7 +33,7 @@ if [[ ! -f ~/.antigen.zsh ]]; then
     curl https://raw.githubusercontent.com/zsh-users/antigen/master/antigen.zsh > ~/.antigen.zsh
 fi
 
-ANTIGEN_DEFAULT_REPO_URL=https://bitbucket.org/JarrodCTaylor/zsh-components
+ANTIGEN_DEFAULT_REPO_URL=https://bitbucket.org/toranb/zsh-components
 source ~/.antigen.zsh
 # >>1
 
