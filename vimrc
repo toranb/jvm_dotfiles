@@ -13,6 +13,7 @@ if has('vim_starting')
 endif
 call neobundle#rc(expand($HOME.'/.vim/bundle/'))
 NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'JarrodCTaylor/vim-qunit-special-blend'
 NeoBundle 'bkad/CamelCaseMotion'
 NeoBundle 'mfollett/groovy.vim'
 NeoBundle 'scrooloose/nerdtree'
@@ -352,6 +353,8 @@ imap <C-f> <C-o>l
 imap <C-b> <C-o>h
 nnoremap <Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 
+nmap <Leader>tm :RunSingleQunitTest<CR>
+
 nmap <Leader>j :call InvokeJumpToByType()<CR>
 function! InvokeJumpToByType()
     let filetype=&ft
@@ -362,5 +365,6 @@ function! InvokeJumpToByType()
     endif
 endfunction
 
+let g:special_blend_run='gulp test'
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 let g:syntastic_javascript_checkers = ['']
