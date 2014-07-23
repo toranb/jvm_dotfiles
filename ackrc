@@ -1,8 +1,10 @@
 --literal
 --smart-case
+--type-set=javascript=.js
 --type-set=groovy=.groovy
 --type-set=handlebars=.handlebars
 --type=groovy
 --type=python
 --type=ruby
 --type=handlebars
+--type=javascript
