@@ -91,7 +91,7 @@ function +pr-mode-full() {
     info_line_width=${#${(%)info_line_width}}
     return_status_width=3
 
-    filler="${gray}${(l:$(( $COLUMNS - $info_line_width - $return_status_width + $v_shim + $rvm_shim + $npm_shim))::─:)}${reset}"
+    filler="${gray}${(l:$(( $COLUMNS - 20 - $info_line_width - $return_status_width + $v_shim + $rvm_shim + $npm_shim))::─:)}${reset}"
     infoline[-1]=( ${filler} ${infoline[-1]} )
 
     lines=(
