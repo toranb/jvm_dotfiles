@@ -354,6 +354,8 @@ imap <C-b> <C-o>h
 nnoremap <Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 
 nmap <Leader>tm :RunSingleQunitTest<CR>
+nmap <Leader>tc :RunSingleQunitModule<CR>
+nmap <Leader>ta :!gulp test<CR>
 
 nmap <Leader>j :call InvokeJumpToByType()<CR>
 function! InvokeJumpToByType()
