@@ -40,6 +40,8 @@ NeoBundle 'epeli/slimux'
 NeoBundle 'https://github.com/mattn/emmet-vim/'
 NeoBundle 'osyo-manga/vim-over'
 NeoBundle 'kien/rainbow_parentheses.vim'
+NeoBundle 'wellle/targets.vim'
+NeoBundle 'thinca/vim-qfreplace'
 NeoBundle '~/jvm_dotfiles/vim/my-plugins/nerd-ack', {'type': 'nosync'}
 NeoBundle '~/jvm_dotfiles/vim/my-plugins/tmux-navigator', {'type': 'nosync'}
 NeoBundle '~/jvm_dotfiles/vim/my-plugins/vim-ack', {'type': 'nosync'}
