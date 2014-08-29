@@ -4,6 +4,7 @@
 --type-set=groovy=.groovy
 --type-set=handlebars=.handlebars
 --type=groovy
+--type=java
 --type=python
 --type=ruby
 --type=handlebars
