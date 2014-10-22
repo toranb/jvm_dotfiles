@@ -82,7 +82,7 @@ set expandtab                          " Make vim use spaces and not tabs
 set undolevels=1000                    " Never can be too careful when it comes to undoing
 set hidden                             " Don't unload the buffer when we switch between them. Saves undo history
 set visualbell                         " Visual bell instead of beeping
-set wildignore=*.swp,*.bak,*.pyc,*.class,bin/**,build/**,jspm_packages/**,node_modules/**  " wildmenu: ignore these extensions
+set wildignore=*.swp,*.bak,*.pyc,*.class,bin/**,build/**,node_modules/**  " wildmenu: ignore these extensions
 set wildmenu                           " Command-line completion in an enhanced mode
 set shell=bash                         " Required to let zsh know how to run things on command line
 set ttimeoutlen=50                     " Fix delay when escaping from insert with Esc
@@ -151,7 +151,7 @@ let g:neocomplcache_force_overwrite_completefunc = 1
 let g:neocomplcache_auto_completion_start_length = 99
 set completeopt-=preview
 let g:ctrlp_use_caching=0
-let g:ctrlp_custom_ignore = 'bin$\|build$\|jspm_packages$\|node_modules$\|xmlrunner$\|.DS_Store|.git|.bak|.swp|.pyc|.class'
+let g:ctrlp_custom_ignore = 'bin$\|dist$\|build$\|node_modules$\|.DS_Store|.git|.bak|.swp|.pyc|.class'
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_max_files=0
 let g:ctrlp_max_height = 18
@@ -330,6 +330,10 @@ let mapleader=" "
 nnoremap j gj
 nnoremap k gk
 nnoremap <Leader>ff :CtrlP<CR>
+nnoremap <C-S-n> :CtrlP<CR>
+nmap <C-b> :call InvokeJumpToByType()<CR>
+nmap <C-A-b> :call InvokeJumpToByType()<CR>
+
 nnoremap <Leader>tb :TagbarToggle<CR>
 map <Leader>a :Ack!<space>
 map <Leader>d :NERDTreeToggle<CR>
