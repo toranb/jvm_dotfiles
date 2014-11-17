@@ -151,6 +151,8 @@ fi
 # >>1
 
 # EOF
+export JAVA_HOME=/home/toranb/jdk1.8.0_25/
+export PATH=$JAVA_HOME/bin:$PATH
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s $HOME/.gvm/bin/gvm-init.sh ]] && source $HOME/.gvm/bin/gvm-init.sh

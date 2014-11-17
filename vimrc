@@ -209,7 +209,7 @@ let g:rbpt_loadcmd_toggle = 0
 nnoremap <Esc><Esc> :nohlsearch<CR>
 function! RenewTagsFile()
     exe 'silent !rm -rf .ctags'
-    exe 'silent !ctags -a -Rf .ctags --languages=javascript --exclude=.git --exclude="*.min.js" --exclude=node_modules --exclude=jspm_packages 2>/dev/null'
+    exe 'silent !ctags -a -Rf .ctags --languages=javascript --exclude=.git --exclude="*.min.js" --exclude=node_modules --exclude=build --exclude=src/main/resources/static/dist 2>/dev/null'
     exe 'redraw!'
 endfunction
 function! SortLines() range
@@ -362,7 +362,7 @@ nnoremap <Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 
 nmap <Leader>tm :RunSingleQunitTest<CR>
 nmap <Leader>tc :RunSingleQunitModule<CR>
-nmap <Leader>ta :!gulp test<CR>
+nmap <Leader>ta :!gulp modTest<CR>
 
 nmap <Leader>j :call InvokeJumpToByType()<CR>
 function! InvokeJumpToByType()
@@ -374,6 +374,6 @@ function! InvokeJumpToByType()
     endif
 endfunction
 
-let g:special_blend_run='gulp test'
+let g:special_blend_run='gulp modTest'
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 let g:syntastic_javascript_checkers = ['']
