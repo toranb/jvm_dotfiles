@@ -36,12 +36,14 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'justinmk/vim-sneak'
 NeoBundle 'JarrodCTaylor/vim-shell-executor'
+NeoBundle 'https://github.com/tpope/vim-dispatch'
 NeoBundle 'epeli/slimux'
 NeoBundle 'https://github.com/mattn/emmet-vim/'
 NeoBundle 'osyo-manga/vim-over'
 NeoBundle 'kien/rainbow_parentheses.vim'
 NeoBundle 'wellle/targets.vim'
 NeoBundle 'thinca/vim-qfreplace'
+NeoBundle 'https://github.com/JarrodCTaylor/vim-ember-cli-test-runner'
 NeoBundle '~/jvm_dotfiles/vim/my-plugins/nerd-ack', {'type': 'nosync'}
 NeoBundle '~/jvm_dotfiles/vim/my-plugins/tmux-navigator', {'type': 'nosync'}
 NeoBundle '~/jvm_dotfiles/vim/my-plugins/vim-ack', {'type': 'nosync'}
@@ -151,7 +153,7 @@ let g:neocomplcache_force_overwrite_completefunc = 1
 let g:neocomplcache_auto_completion_start_length = 99
 set completeopt-=preview
 let g:ctrlp_use_caching=0
-let g:ctrlp_custom_ignore = 'bin$\|dist$\|build$\|node_modules$\|.DS_Store|.git|.bak|.swp|.pyc|.class'
+let g:ctrlp_custom_ignore = 'bin$\|tmp$\|bower_components$\|dist$\|build$\|node_modules$\|.DS_Store|.git|.bak|.swp|.pyc|.class'
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_max_files=0
 let g:ctrlp_max_height = 18
