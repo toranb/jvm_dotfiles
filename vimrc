@@ -84,7 +84,7 @@ set expandtab                          " Make vim use spaces and not tabs
 set undolevels=1000                    " Never can be too careful when it comes to undoing
 set hidden                             " Don't unload the buffer when we switch between them. Saves undo history
 set visualbell                         " Visual bell instead of beeping
-set wildignore=*.swp,*.bak,*.pyc,*.class,bin/**,build/**,node_modules/**  " wildmenu: ignore these extensions
+set wildignore=*.swp,*.bak,*.pyc,*.class,bin/**,build/**,tmp/**,dist/**,bower_components/**,node_modules/**  " wildmenu: ignore these extensions
 set wildmenu                           " Command-line completion in an enhanced mode
 set shell=bash                         " Required to let zsh know how to run things on command line
 set ttimeoutlen=50                     " Fix delay when escaping from insert with Esc
@@ -211,7 +211,7 @@ let g:rbpt_loadcmd_toggle = 0
 nnoremap <Esc><Esc> :nohlsearch<CR>
 function! RenewTagsFile()
     exe 'silent !rm -rf .ctags'
-    exe 'silent !ctags -a -Rf .ctags --languages=javascript --exclude=.git --exclude="*.min.js" --exclude=node_modules --exclude=build --exclude=src/main/resources/static/dist 2>/dev/null'
+    exe 'silent !ctags -a -Rf .ctags --languages=javascript --exclude=.git --exclude="*.min.js" --exclude=node_modules --exclude=bower_components --exclude=tmp --exclude=dist --exclude=build --exclude=src/main/resources/static/dist 2>/dev/null'
     exe 'redraw!'
 endfunction
 function! SortLines() range

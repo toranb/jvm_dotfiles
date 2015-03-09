@@ -12,3 +12,5 @@
 [user]
 	name = toran billups
 	email = toranb@gmail.com
+[push]
+    defualt = simple
